@@ -3,6 +3,8 @@ A javascript token field that is easy to use and customize.
 
 <a href="http://lucaslouca.github.io/jstokenfield/" target="_blank">Demo</a>
 
+![jstokenfield](https://cloud.githubusercontent.com/assets/10542894/6271964/b0f38fc8-b864-11e4-9bc9-429fa675ddf9.png)
+
 ## How to use it
 
 Include the neccesary stylesheet and javascript files:
