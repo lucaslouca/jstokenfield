@@ -55,6 +55,9 @@ Instantiate the token field:
 
 >Type: Function(text)
 
+>**text**
+> The text value of the new token
+
 >A function to execute when a new token is about to be generated. Validator should return true if text is valid, false otherwise. If validator returns true, tokens will appear normal, else tokens are represented as invalid.
 
 <br>
