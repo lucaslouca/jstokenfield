@@ -21,7 +21,7 @@ Instantiate the token field:
 <script>
 	var tokenField = new JSTokenField('myTokenField');
 			tokenField.onChange(function(content) {
-				// input has changed
+				// Content has changed
 			});
 			
 			tokenField.setValidator(function(text) {
@@ -32,3 +32,38 @@ Instantiate the token field:
 ```
 
 ## Public methods
+> `onChange(handler)`
+
+>**handler**
+
+>Type: Function(content)
+
+>A function to execute when the content changes. The `content` represents the token text values in form of an array
+
+<br>
+
+> `getContent()`
+
+>Returns an array holding the text values of all the tokens in the token field.
+
+<br>
+
+> `setValidator(validator)`
+> Set validator method that is called for every token generated.
+>**validator**
+
+>Type: Function(text)
+
+>A function to execute when a new token is about to be generated. Validator should return true if text is valid, false otherwise. If validator returns true, tokens will appear normal, else tokens are represented as invalid.
+
+<br>
+
+> `getValidContent()`
+
+>Returns an array holding the text values of only the valid (based on the given validator) tokens in the token field.
+
+<br>
+
+> `getInvalidContent()`
+
+>Returns an array holding the text values of only the invalid (based on the given validator) tokens in the token field.
