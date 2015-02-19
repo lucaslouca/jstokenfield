@@ -50,6 +50,7 @@ Instantiate the token field:
 
 > `setValidator(validator)`
 > Set validator method that is called for every token generated.
+
 >**validator**
 
 >Type: Function(text)
