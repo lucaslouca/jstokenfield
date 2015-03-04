@@ -22,14 +22,16 @@ Instantiate the token field:
 ```
 <script>
 	var tokenField = new JSTokenField('myTokenField');
-			tokenField.onChange(function(content) {
-				// Content has changed
-			});
+	
+	// Optional event handling
+	tokenField.onChange(function(content) {
+		// Content has changed
+	});
 			
-			tokenField.setValidator(function(text) {
-			  // Add validation logic here
-				return true;
-			});
+	tokenField.setValidator(function(text) {
+	  // Add validation logic here
+		return true;
+	});
 </script>
 ```
 
