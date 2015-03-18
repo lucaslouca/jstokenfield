@@ -1,4 +1,4 @@
-.jsTokenField * {
+.js-token-field * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -12,7 +12,7 @@
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.jsTokenField {
+.js-token-field {
     display: block;
     border:1px #c2ebff solid;
     width:480px;
@@ -26,17 +26,17 @@
 	transition:.1s ease-in-out;
 }
 
-.jsTokenField:hover {
+.js-token-field:hover {
     cursor: text;
 }
 
-.jsTokenField.focus {
+.js-token-field.focus {
 	-webkit-box-shadow: 0px 0px 3px 1px #c2ebff;
 	-moz-box-shadow: 0px 0px 3px 1px #c2ebff;
 	box-shadow: 0px 0px 3px 1px #c2ebff;
 }
 
-.jsTokenField input[type=text] {
+.js-token-field input[type=text] {
 	display: inline-block;
 	border:none;
 	background-color: #FFFFFF;
@@ -49,18 +49,18 @@
     font-size: 1em;
 }
 
-.jsTokenField input[type=text]:focus {
+.js-token-field input[type=text]:focus {
 	outline:none;
 	border:none;
 }
 
-.jsTokenField .tokenWrapper {
+.js-token-field .token-wrapper {
     padding-right: 3px;
     display: inline-block;
     margin:0;
 }
 
-.jsTokenField .token {
+.js-token-field .token {
 	border-radius: 3px;
 	padding-left:5px;
 	padding-right:30px;
@@ -72,23 +72,23 @@
     position:relative;
 }
 
-.jsTokenField .token.valid {
+.js-token-field .token.valid {
     background-color: #ceff9c;
 }
 
-.jsTokenField .token.valid:hover {
+.js-token-field .token.valid:hover {
     background-color: #9dd960;
 }
 
-.jsTokenField .token.invalid {
+.js-token-field .token.invalid {
     background-color: #ff9a9a;
 }
 
-.jsTokenField .token.invalid:hover {
+.js-token-field .token.invalid:hover {
     background-color: #ff6060;
 }
 
-.jsTokenField .close {
+.js-token-field .close {
 	-webkit-transition:.1s ease-in-out;
 	-moz-transition:.1s ease-in-out;
 	transition:.1s ease-in-out;
@@ -105,31 +105,31 @@
 	border-radius: 10px;
 }
 
-.jsTokenField  .token.valid .close {
+.js-token-field  .token.valid .close {
 	color:#e7ffcf;
 	cursor: pointer;
 	background-color: #a7e965;
 }
 
-.jsTokenField  .token.valid .close:hover {
+.js-token-field  .token.valid .close:hover {
 	cursor: pointer;
 }
 
-.jsTokenField  .token.valid .close:active {
+.js-token-field  .token.valid .close:active {
 	background-color: #7eb14a;
 }
 
-.jsTokenField  .token.invalid .close {
+.js-token-field  .token.invalid .close {
 	color:#ffd7d7;
 	cursor: pointer;
 	background-color: #ff7c7c;
 }
 
-.jsTokenField .token.invalid .close:hover {
+.js-token-field .token.invalid .close:hover {
 	cursor: pointer;
 }
 
-.jsTokenField .token.invalid .close:active {
+.js-token-field .token.invalid .close:active {
 	background-color: #b71313;
 }
 

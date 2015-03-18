@@ -49,7 +49,7 @@ var JSTokenField = function(tokenFieldId) {
         } else if( code == 8 || code == 46 ) { // Backspace or Delete keycode
             if (this.value == '') {
                 // remove last token
-                var remaining = _tokenField.getElementsByClassName('tokenWrapper');
+                var remaining = _tokenField.getElementsByClassName('token-wrapper');
                 var last = remaining[remaining.length-1];
                 if (typeof last != 'undefined') {
                     removeToken(last);
@@ -84,7 +84,7 @@ var JSTokenField = function(tokenFieldId) {
 			var text = tokens[i];
 			if (text != '') {
                 var tokenWrapper = document.createElement("div");
-				tokenWrapper.classList.add("tokenWrapper");
+				tokenWrapper.classList.add("token-wrapper");
 
 				var token = document.createElement("div");
 				token.classList.add("token");
@@ -110,7 +110,7 @@ var JSTokenField = function(tokenFieldId) {
                 close.onclick = onclickWrapper(tokenWrapper);
 
 				var tokenText = document.createElement("span");
-				tokenText.classList.add("tokenText");
+				tokenText.classList.add("token-text");
 				tokenText.appendChild(document.createTextNode(text)); 
                 
                 token.appendChild(tokenText); 
@@ -143,7 +143,7 @@ var JSTokenField = function(tokenFieldId) {
         ftokenWrapper.parentNode.removeChild(ftokenWrapper);
 
         // find last token in list
-        var remaining = _tokenField.getElementsByClassName('tokenWrapper');
+        var remaining = _tokenField.getElementsByClassName('token-wrapper');
         var last = remaining[remaining.length-1];
         if (typeof last != 'undefined') {
             resizeInput(last);
@@ -185,7 +185,7 @@ var JSTokenField = function(tokenFieldId) {
 	 */
     function getContent() {
         var content = [];
-        var tokens = _tokenField.getElementsByClassName('tokenText');
+        var tokens = _tokenField.getElementsByClassName('token-text');
         for (var i=0; i<tokens.length; i++) {
             content.push(tokens[i].textContent);
         } 
@@ -203,7 +203,7 @@ var JSTokenField = function(tokenFieldId) {
         var content = [];
         var validTokens = _tokenField.getElementsByClassName('valid');
         for (var i=0; i<validTokens.length; i++) {
-	        var tokenText = validTokens[i].getElementsByClassName('tokenText');
+	        var tokenText = validTokens[i].getElementsByClassName('token-text');
             content.push(tokenText[0].textContent);
         } 
         
@@ -220,7 +220,7 @@ var JSTokenField = function(tokenFieldId) {
         var content = [];
         var validTokens = _tokenField.getElementsByClassName('invalid');
         for (var i=0; i<validTokens.length; i++) {
-	        var tokenText = validTokens[i].getElementsByClassName('tokenText');
+	        var tokenText = validTokens[i].getElementsByClassName('token-text');
             content.push(tokenText[0].textContent);
         } 
         
