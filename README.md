@@ -15,13 +15,13 @@ Include the neccesary stylesheet and javascript files:
 
 Include a simple div to hold your token field:
 ```
-<div id="myTokenField" class="jsTokenField"></div>
+<div id="my-token-field" class="js-token-field"></div>
 ```
 
 Instantiate the token field:
 ```
 <script>
-	var tokenField = new JSTokenField('myTokenField');
+	var tokenField = new JSTokenField('my-token-field');
 	
 	// Optional event handling
 	tokenField.onChange(function(content) {
